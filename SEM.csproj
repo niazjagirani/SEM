@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7F0BC69-B181-4468-9627-C05E967A2610}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SEM</RootNamespace>
+    <AssemblyName>SEM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppStart.Designer.cs">
+      <DependentUpon>AppStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegBoard.Designer.cs">
+      <DependentUpon>RegBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegExam.Designer.cs">
+      <DependentUpon>RegExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegExamManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegExamManagement.Designer.cs">
+      <DependentUpon>RegExamManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegFees.Designer.cs">
+      <DependentUpon>RegFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegSalary.Designer.cs">
+      <DependentUpon>RegSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegStudent.Designer.cs">
+      <DependentUpon>RegStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegStudentPrivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegStudentPrivate.Designer.cs">
+      <DependentUpon>RegStudentPrivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegSubject.Designer.cs">
+      <DependentUpon>RegSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegTeacher.Designer.cs">
+      <DependentUpon>RegTeacher.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AppStart.resx">
+      <DependentUpon>AppStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegBoard.resx">
+      <DependentUpon>RegBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegExam.resx">
+      <DependentUpon>RegExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegExamManagement.resx">
+      <DependentUpon>RegExamManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegFees.resx">
+      <DependentUpon>RegFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegSalary.resx">
+      <DependentUpon>RegSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegStudent.resx">
+      <DependentUpon>RegStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegStudentPrivate.resx">
+      <DependentUpon>RegStudentPrivate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegSubject.resx">
+      <DependentUpon>RegSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegTeacher.resx">
+      <DependentUpon>RegTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schoolban3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schoolban3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
